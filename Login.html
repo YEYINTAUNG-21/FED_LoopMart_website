@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page">
+        <!-- Logo -->
+        <header> 
+            <img src="LoopMartLogo.png" alt="LoopMart Logo" class = "logo">
+        </header>
+         <!-- Login Form -->
+         <main class="login-container">
+            <h1>Login</h1>
+            <p class="welcome-text">Welcome back</p>
+            <!-- Profile Icon -->
+            <div class="profile-icon">
+                <img src="ProfileIcon.png" alt="Profile Icon">
+            </div>
+            <!-- Input Fields -->
+             <form class="login-form" action="home.html" method="GET">
+                <input type="text" placeholder="Username or Email" class="input-box" required>
+                <input type="password" placeholder="Password" class="input-box" required>
+                <!-- Remember Me  & Forgot Password -->
+                 <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot password?</a>
+                 </div>
+                 <!-- Login Button -->
+                  <button type="submit" class="login-button">Login</button>
+        </main>
+    </div>
+</body>
+</html>
