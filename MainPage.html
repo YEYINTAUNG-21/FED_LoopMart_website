@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Main Page</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +25,9 @@
                 <button class="icon"><i class="fas fa-shopping-cart"></i></button>
                 <button class="icon"><i class="fas fa-bell"></i></button>
                 <button class="icon"><i class="fas fa-comment"></i></button>
-                <button class="profile-icon">Profile</button>
+                <button class="profile-icon-button" onclick="location.href='ProfileManagement.html';">
+                    Profile
+                </button>
             </div>
          </header>
 
@@ -40,7 +42,9 @@
                 <!-- Listing 1 -->
                 <div class="listing-item">
                     <div class="listing-header">
-                        <img class="profile-img" src="profile1.jpg" alt="Profile">
+                        <div class="profile-icon">
+                            <div class="profile-placeholder">Profile</div>
+                        </div>
                         <div class="profile-info">
                             <p class="profile-name">Profile name</p>
                             <p class="time-ago">14 hours ago</p>
@@ -50,8 +54,8 @@
                     <div class="listing-details">
                         <p class="item-name">Item Name</p>
                         <p class="short-desc">Short Description of Item</p>
-                        <p class="price">Price</p>
-                        <p class="item-condition">Item Condition</p>
+                        <p class="price">$70.99</p>
+                        <p class="item-condition">New</p>
                         <div class="like-section">
                             <span class="fas fa-heart"></span>
                             <p class="like-number">120 likes</p>
@@ -62,7 +66,9 @@
                 <!-- Listing 2 -->
                 <div class="listing-item">
                     <div class="listing-header">
-                        <img class="profile-img" src="profile2.jpg" alt="Profile">
+                        <div class="profile-icon">
+                            <div class="profile-placeholder">Profile</div>
+                        </div>
                         <div class="profile-info">
                             <p class="profile-name">Profile Name</p>
                             <p class="time-ago">10 hours ago</p>
@@ -72,8 +78,8 @@
                     <div class="listing-details">
                         <p class="item-name">Item Name</p>
                         <p class="short-desc">Short Description of Item</p>
-                        <p class="price">Price</p>
-                        <p class="item-condition">Item Condition</p>
+                        <p class="price">$30.99</p>
+                        <p class="item-condition">Used</p>
                         <div class="like-section">
                             <span class="fas fa-heart"></span>
                             <p class="like-number">245 likes</p>
@@ -84,7 +90,9 @@
                 <!-- Listing 3 -->
                 <div class="listing-item">
                     <div class="listing-header">
-                        <img class="profile-img" src="profile2.jpg" alt="Profile">
+                        <div class="profile-icon">
+                            <div class="profile-placeholder">Profile</div>
+                        </div>
                         <div class="profile-info">
                             <p class="profile-name">Profile Name</p>
                             <p class="time-ago">22 hours ago</p>
@@ -94,8 +102,8 @@
                     <div class="listing-details">
                         <p class="item-name">Item Name</p>
                         <p class="short-desc">Short Description of Item</p>
-                        <p class="price">Price</p>
-                        <p class="item-condition">Item Condition</p>
+                        <p class="price">$45.99</p>
+                        <p class="item-condition">Used</p>
                         <div class="like-section">
                             <span class="fas fa-heart"></span>
                             <p class="like-number">103 likes</p>
@@ -106,7 +114,9 @@
                 <!-- Listing 4 -->
                 <div class="listing-item">
                     <div class="listing-header">
-                        <img class="profile-img" src="profile2.jpg" alt="Profile">
+                        <div class="profile-icon">
+                            <div class="profile-placeholder">Profile</div>
+                        </div>
                         <div class="profile-info">
                             <p class="profile-name">Profile Name</p>
                             <p class="time-ago">2 days ago</p>
@@ -116,8 +126,8 @@
                     <div class="listing-details">
                         <p class="item-name">Item Name</p>
                         <p class="short-desc">Short Description of Item</p>
-                        <p class="price">Price</p>
-                        <p class="item-condition">Item Condition</p>
+                        <p class="price">$80.99</p>
+                        <p class="item-condition">Brand New</p>
                         <div class="like-section">
                             <span class="fas fa-heart"></span>
                             <p class="like-number">186 likes</p>
@@ -126,6 +136,225 @@
                 </div>
             </div>
         </section>
+
+        <!-- Recommended For You Section -->
+        <section class="recommended-section">
+            <h2>Recommended for You</h2>
+            <div class="listing-nav">
+                <button class="arrow-btn left-arrow">←</button>
+                <button class="arrow-btn right-arrow">→</button>
+            </div>
+            <!-- Listings -->
+            <div class="listing-container">
+                <!-- Listing 1 -->
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <div class="profile-icon">
+                            <div class="profile-placeholder">Profile</div>
+                        </div>
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">2 days ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="Images/item2.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Item Name</p>
+                        <p class="short-desc">Short Description of Item</p>
+                        <p class="price">$49.99</p>
+                        <p class="item-condition">New</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">186 likes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing 2 -->
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <div class="profile-icon">
+                            <div class="profile-placeholder">Profile</div>
+                        </div>
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">3 days ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="Images/item3.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Another Item</p>
+                        <p class="short-desc">Short Description of Another Item</p>
+                        <p class="price">$29.99</p>
+                        <p class="item-condition">Used</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">152 likes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing 3 -->
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <div class="profile-icon">
+                            <div class="profile-placeholder">Profile</div>
+                        </div>
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">1 day ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="Images/item4.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Third Item</p>
+                        <p class="short-desc">Description of the third item</p>
+                        <p class="price">$39.99</p>
+                        <p class="item-condition">New</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">120 likes</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing 4 -->
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <div class="profile-icon">
+                            <div class="profile-placeholder">Profile</div>
+                        </div>
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">5 days ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="Images/item5.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Fourth Item</p>
+                        <p class="short-desc">Description of the fourth item</p>
+                        <p class="price">$19.99</p>
+                        <p class="item-condition">Used</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">100 likes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Categories of items -->
+        <div class="category-buttons">
+            <button class="category-button">All</button>
+            <button class="category-button">Home & Furniture</button>
+            <button class="category-button">Vehicles</button>
+            <button class="category-button">Books, Music</button>
+            <button class="category-button">Electronic</button>
+            <button class="category-button">See More...</button>
+        </div>
+
+        <div class="listing-nav">
+            <button class="arrow-btn left-arrow">←</button>
+            <button class="arrow-btn right-arrow">→</button>
+        </div>
+        <div class="listing-container">
+            <!-- Listing 1 -->
+            <div class="listing-item">
+                <div class="listing-header">
+                    <div class="profile-icon">
+                        <div class="profile-placeholder">Profile</div>
+                    </div>
+                    <div class="profile-info">
+                        <p class="profile-name">Profile name</p>
+                        <p class="time-ago">5 hours ago</p>
+                    </div>
+                </div>
+                <img class="listing-img" src="item1.jpg" alt="Listing Image">
+                <div class="listing-details">
+                    <p class="item-name">Item Name</p>
+                    <p class="short-desc">Short Description of Item</p>
+                    <p class="price">$80.99</p>
+                    <p class="item-condition">New</p>
+                    <div class="like-section">
+                        <span class="fas fa-heart"></span>
+                        <p class="like-number">176 likes</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Listing 2 -->
+            <div class="listing-item">
+                <div class="listing-header">
+                    <div class="profile-icon">
+                        <div class="profile-placeholder">Profile</div>
+                    </div>
+                    <div class="profile-info">
+                        <p class="profile-name">Profile Name</p>
+                        <p class="time-ago">1 day ago</p>
+                    </div>
+                </div>
+                <img class="listing-img" src="item2.jpg" alt="Listing Image">
+                <div class="listing-details">
+                    <p class="item-name">Item Name</p>
+                    <p class="short-desc">Short Description of Item</p>
+                    <p class="price">$72.99</p>
+                    <p class="item-condition">Brand New</p>
+                    <div class="like-section">
+                        <span class="fas fa-heart"></span>
+                        <p class="like-number">182 likes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Listing 3 -->
+            <div class="listing-item">
+                <div class="listing-header">
+                    <div class="profile-icon">
+                        <div class="profile-placeholder">Profile</div>
+                    </div>
+                    <div class="profile-info">
+                        <p class="profile-name">Profile Name</p>
+                        <p class="time-ago">18 hours ago</p>
+                    </div>
+                </div>
+                <img class="listing-img" src="item2.jpg" alt="Listing Image">
+                <div class="listing-details">
+                    <p class="item-name">Item Name</p>
+                    <p class="short-desc">Short Description of Item</p>
+                    <p class="price">$10.99</p>
+                    <p class="item-condition">Used</p>
+                    <div class="like-section">
+                        <span class="fas fa-heart"></span>
+                        <p class="like-number">257 likes</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Listing 4 -->
+            <div class="listing-item">
+                <div class="listing-header">
+                    <div class="profile-icon">
+                        <div class="profile-placeholder">Profile</div>
+                    </div>
+                    <div class="profile-info">
+                        <p class="profile-name">Profile Name</p>
+                        <p class="time-ago">6 hours ago</p>
+                    </div>
+                </div>
+                <img class="listing-img" src="item2.jpg" alt="Listing Image">
+                <div class="listing-details">
+                    <p class="item-name">Item Name</p>
+                    <p class="short-desc">Short Description of Item</p>
+                    <p class="price">$29.99</p>
+                    <p class="item-condition">New</p>
+                    <div class="like-section">
+                        <span class="fas fa-heart"></span>
+                        <p class="like-number">332 likes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
