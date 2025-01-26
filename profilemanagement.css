@@ -1,0 +1,241 @@
+/* Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+/* Header Styles */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.home-header-left, .home-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 15px;
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input, .search-icon {
+    height: 35px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-input {
+    border-radius: 5px 0 0 5px;
+    padding: 5px 10px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+.search-icon {
+    background: #007bff;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.icon, .profile-icon-button {
+    background: none;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.profile-icon-button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Profile Management Page Styles */
+.profile-management {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    background: #fff;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.profile-details {
+    width: 75%;
+    padding: 20px;
+}
+
+.profile-details h1,
+.profile-details h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-details .profile-img-section {
+    display: flex;
+    align-items: center; /* Vertically center */
+    margin-bottom: 20px;
+}
+
+.profile-details .profile-img {
+    background-color: #007bff; /* Blue background for the profile picture */
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.profile-details .profile-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center the text vertically */
+}
+
+.profile-details .profile-text p {
+    margin-bottom: 10px;
+}
+
+.profile-details .profile-text button {
+    align-self: flex-start; /* Align the button to the left */
+}
+
+.input-fields {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-fields input, 
+.input-fields textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.input-fields input:focus, 
+.input-fields textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Icons Inside Input Fields */
+.dropdown, .calendar-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -10px; /* Replace transform with margin */
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+    padding-right: 40px; /* Space for icons */
+}
+
+/* Word Count */
+.word-count {
+    font-size: 0.8em;
+    color: #777;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Save Button */
+.save-changes {
+    background: #007bff;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Dropdown Options */
+.dropdown-options {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.dropdown-options div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown-options.visible {
+    display: block;
+}
+
+.dropdown-options div:hover {
+    background: #f1f1f1;
+}
