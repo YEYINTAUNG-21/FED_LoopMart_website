@@ -5,44 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForMain.css">
 </head>
 <body>
     <div class="home-page">
         <!-- Header Section -->
-         <header class="home-header">
+        <header class="home-header">
             <!-- Logo and Search Bar -->
             <div class="home-header-left">
-                <img src="LoopMartLogo.png" alt="Logo" class="logo">
+                <img src="/Images/LoopMartLogo.png" alt="Logo" class="logo">
                 <div class="search-bar">
                     <input type="text" placeholder="Search for item..." class="search-input">
                     <button class="search-icon"><i class="fas fa-search"></i></button>
                 </div>
             </div>
-
-            <!-- Top Right Icons -->
-             <div class="home-header-right">
+        
+            <!-- Icons Section -->
+            <div class="home-header-right">
                 <button class="icon"><i class="fas fa-shopping-cart"></i></button>
                 <button class="icon"><i class="fas fa-bell"></i></button>
                 <button class="icon"><i class="fas fa-comment"></i></button>
-                <button class="profile-icon">Profile</button>
+                <button class="profile-icon">
+                    <img id="profileImg" class="profile-picture" alt="Profile">
+                </button>
             </div>
-         </header>
-
-         <!-- Trending Listings Section -->
-         <section class="trending-listings">
+        </header>
+        
+        <!-- Trending Listings Section -->
+        <section class="trending-listings">
             <h2>Trending Listings</h2>
             <div class="listing-nav">
-                <button class="arrow-btn left-arrow">←</button>
-                <button class="arrow-btn right-arrow">→</button>
+                <button class="arrow-btn left-arrow"><i class="fas fa-chevron-left"></i></button>
+                <button class="arrow-btn right-arrow"><i class="fas fa-chevron-right"></i></button>
             </div>
             <div class="listing-container">
-                <!-- Listing 1 -->
+                <!-- Listing Card -->
                 <div class="listing-item">
                     <div class="listing-header">
-                        <img class="profile-img" src="profile1.jpg" alt="Profile">
+                        <img class="profile-img" src="" alt="Profile">
                         <div class="profile-info">
-                            <p class="profile-name">Profile name</p>
+                            <p class="profile-name">Profile Name</p>
                             <p class="time-ago">14 hours ago</p>
                         </div>
                     </div>
@@ -58,11 +60,9 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Listing 2 -->
                 <div class="listing-item">
                     <div class="listing-header">
-                        <img class="profile-img" src="profile2.jpg" alt="Profile">
+                        <img class="profile-img" src="" alt="Profile">
                         <div class="profile-info">
                             <p class="profile-name">Profile Name</p>
                             <p class="time-ago">10 hours ago</p>
@@ -80,14 +80,12 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Listing 3 -->
                 <div class="listing-item">
                     <div class="listing-header">
-                        <img class="profile-img" src="profile2.jpg" alt="Profile">
+                        <img class="profile-img" src="" alt="Profile">
                         <div class="profile-info">
                             <p class="profile-name">Profile Name</p>
-                            <p class="time-ago">22 hours ago</p>
+                            <p class="time-ago">10 hours ago</p>
                         </div>
                     </div>
                     <img class="listing-img" src="item2.jpg" alt="Listing Image">
@@ -98,18 +96,16 @@
                         <p class="item-condition">Item Condition</p>
                         <div class="like-section">
                             <span class="fas fa-heart"></span>
-                            <p class="like-number">103 likes</p>
+                            <p class="like-number">245 likes</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Listing 4 -->
                 <div class="listing-item">
                     <div class="listing-header">
-                        <img class="profile-img" src="profile2.jpg" alt="Profile">
+                        <img class="profile-img" src="" alt="Profile">
                         <div class="profile-info">
                             <p class="profile-name">Profile Name</p>
-                            <p class="time-ago">2 days ago</p>
+                            <p class="time-ago">10 hours ago</p>
                         </div>
                     </div>
                     <img class="listing-img" src="item2.jpg" alt="Listing Image">
@@ -120,12 +116,104 @@
                         <p class="item-condition">Item Condition</p>
                         <div class="like-section">
                             <span class="fas fa-heart"></span>
-                            <p class="like-number">186 likes</p>
+                            <p class="like-number">245 likes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <img class="profile-img" src="" alt="Profile">
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">10 hours ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="item2.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Item Name</p>
+                        <p class="short-desc">Short Description of Item</p>
+                        <p class="price">Price</p>
+                        <p class="item-condition">Item Condition</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">245 likes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Filter Section -->
+        <section class="filter-section">
+            <button class="filter-button active">All</button>
+            <button class="filter-button">Home & Furniture</button>
+            <button class="filter-button">Vehicles</button>
+            <button class="filter-button">Books, Music</button>
+            <button class="filter-button">Electronic</button>
+        </section>
+
+        <!-- Popular Categories Section -->
+        <section class="popular-categories">
+            <div class="listing-nav">
+                <button class="arrow-btn left-arrow"><i class="fas fa-chevron-left"></i></button>
+                <button class="arrow-btn right-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="listing-container">
+                <!-- Listing Card -->
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <img class="profile-img" src="" alt="Profile">
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">14 hours ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="item1.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Item Name</p>
+                        <p class="short-desc">Short Description of Item</p>
+                        <p class="price">Price</p>
+                        <p class="item-condition">Item Condition</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">120 likes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommended Section -->
+        <section class="recommended-listings">
+            <h2>Recommended for You</h2>
+            <div class="listing-nav">
+                <button class="arrow-btn left-arrow"><i class="fas fa-chevron-left"></i></button>
+                <button class="arrow-btn right-arrow"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="listing-container">
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <img class="profile-img" src="" alt="Profile">
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">14 hours ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="item1.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Item Name</p>
+                        <p class="short-desc">Short Description of Item</p>
+                        <p class="price">Price</p>
+                        <p class="item-condition">Item Condition</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">120 likes</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
