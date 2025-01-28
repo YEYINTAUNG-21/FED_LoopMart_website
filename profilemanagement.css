@@ -24,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background: #333;
+    background: white;
     color: #fff;
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .search-icon {
-    background: #007bff;
+    background: #5c3dad;
     color: #fff;
     padding: 0 10px;
     border-radius: 0 5px 5px 0;
@@ -69,7 +69,7 @@ body {
     border: none;
     margin-left: 15px;
     cursor: pointer;
-    color: #fff;
+    color: #5c3dad;
 }
 
 .profile-icon-button {
@@ -80,7 +80,7 @@ body {
     align-items: center;
     font-size: 16px;
     color: white;
-    background-color: #007bff;
+    background-color: #5c3dad;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -127,7 +127,7 @@ body {
 }
 
 .profile-details .profile-img {
-    background-color: #007bff; /* Blue background for the profile picture */
+    background-color: #5c3dad; 
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -204,7 +204,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
 
 /* Save Button */
 .save-changes {
-    background: #007bff;
+    background: #5c3dad;
     color: #fff;
     padding: 10px;
     width: 100%;

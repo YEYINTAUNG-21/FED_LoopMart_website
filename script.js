@@ -6,7 +6,7 @@ const BUSINESS_SIGNUP_URL = "https://account-25ce.restdb.io/rest/business-sign-u
 
 async function checkIfUserExists(url, email) {
     try {
-        const response = await fetch(${url}?q={"email":"${email}"}, {
+        const response = await fetch('${url}?q={"email":"${email}"}', {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -205,7 +205,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", () => {
     // Function to generate a DiceBear avatar URL with a unique seed
     function generateDiceBearAvatar(seed) {
-        return https://api.dicebear.com/6.x/adventurer/svg?seed=${seed};
+        return `https://api.dicebear.com/6.x/adventurer/svg?seed=${seed}`;
     }
 
     function generateRandomName() {
@@ -215,14 +215,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const firstName = firstNames[Math.floor(Math.random() * firstNames.length)];
         const lastName = lastNames[Math.floor(Math.random() * lastNames.length)];
 
-        return ${firstName} ${lastName};
+        return `${firstName} ${lastName}`;
     }
 
     const profileImageElements = document.querySelectorAll(".profile-img");
     const profileNameElements = document.querySelectorAll(".profile-name");
 
     profileImageElements.forEach((img, index) => {
-        const uniqueSeed = user-${index}-${Math.random().toString(36).substring(2, 15)};
+        const uniqueSeed = `user-${index}-${Math.random().toString(36).substring(2, 15)}`;
         img.src = generateDiceBearAvatar(uniqueSeed);
     });
 
@@ -235,13 +235,13 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener("DOMContentLoaded", () => {
     const profileImg = document.getElementById("profileImg");
     function generateDiceBearAvatar(seed) {
-        return https://api.dicebear.com/6.x/adventurer/svg?seed=${seed};
+        return `https://api.dicebear.com/6.x/adventurer/svg?seed=${seed}`;
     }
     let profileSeed = localStorage.getItem("profileSeed");
 
     if (!profileSeed) {
         
-        profileSeed = user-${Math.random().toString(36).substring(2, 15)};
+        profileSeed = `user-${Math.random().toString(36).substring(2, 15)}`;
         localStorage.setItem("profileSeed", profileSeed); 
     }
 
