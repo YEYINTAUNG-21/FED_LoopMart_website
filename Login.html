@@ -4,39 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleForSignUpLogin.css">
 </head>
 <body>
     <div class="login-page">
-        <!-- Logo -->
-        <header> 
-            <img src="/Images/LoopMartLogo.png" alt="LoopMart Logo" class = "login-page-logo">
-        </header>
-         <!-- Login Form -->
-         <main class="login-container">
+        <!-- Logo Section -->
+        <div class="logo">
+            <img src="Images/LoopMartLogo.png" alt="Logo">
+        </div>
+
+        <!-- Login Form Section -->
+        <main class="login-container">
             <h1>Login</h1>
-            <p class="welcome-text">Welcome back</p>
-            <!-- Profile Icon -->
-            <div class="profile-icon">
-                <img src="/Images/ProfileIcon.png" alt="Profile Icon">
-            </div>
-            <!-- Input Fields -->
-             <form class="login-form" action="MainPage.html" method="GET">
-                <input type="text" placeholder="Username or Email" class="input-box" required>
-                <input type="password" placeholder="Password" class="input-box" required>
-                <!-- Remember Me  & Forgot Password -->
-                 <div class="form-options">
+            <p>Welcome back</p>
+            <form class="login-form">
+                <input type="text" name="username" placeholder="Username or Email" class="input-box" required>
+                <input type="password" name="password" placeholder="Password" class="input-box" required>
+            
+                <div class="form-options">
                     <label class="remember-me">
                         <input type="checkbox"> Remember me
                     </label>
                     <a href="#" class="forgot-password">Forgot password?</a>
-                 </div>
-                 <!-- Login Button -->
-                 <nav>
-                    <button type="submit" class="login-button">Login</button>
-                    <a href="MainPage.html"></a>
-                 </nav>
+                </div>
+                <button type="submit" class="signup-btn">Login</button>
+            </form>            
         </main>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

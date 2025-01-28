@@ -1,0 +1,167 @@
+/* Sign-Up pages and Login page */
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f8f6ff; 
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Logo */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+}
+
+.logo img {
+  width: auto;
+  height: auto;
+  max-width: 150px;
+  display: block;
+}
+
+/* Container for Forms */
+.signup-container, .login-container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Form Header */
+h1 {
+  font-size: 28px;
+  color: #5c3dad; 
+  margin-bottom: 10px;
+}
+
+p {
+  color: #888;
+  margin: 20px 0;
+}
+
+
+/* Input Fields */
+form input, form select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+form input:focus, form select:focus {
+  outline: none;
+  border-color: #5c3dad;
+  box-shadow: 0 0 5px rgba(92, 61, 173, 0.5);
+}
+
+/* Business Select Dropdown */
+form select {
+  display: block;
+  width: 100%; 
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.signup-btn {
+  background-color: #5c3dad;
+  color: white;
+}
+
+.signup-btn:hover {
+  background-color: #472f8a;
+}
+
+.guest-btn {
+  background-color: #f9f9f9;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.guest-btn:hover {
+  background-color: #ececec;
+}
+
+/* Links */
+a {
+  color: #5c3dad;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form Options (Remember Me and Forgot Password) */
+.form-options {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 10px; 
+}
+
+.remember-me {
+  display: flex;
+  align-items: center; 
+  font-size: 0.9em;
+  gap: 5px; 
+}
+
+.remember-me input[type="checkbox"] {
+  margin: 0; 
+  width: 16px; 
+  height: 16px; 
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: #5c3dad;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+} 
