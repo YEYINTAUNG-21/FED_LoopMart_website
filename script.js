@@ -6,7 +6,7 @@ const BUSINESS_SIGNUP_URL = "https://account-25ce.restdb.io/rest/business-sign-u
 
 async function checkIfUserExists(url, email) {
     try {
-        const response = await fetch('${url}?q={"email":"${email}"}', {
+        const response = await fetch(`${url}?q={"email":"${email}"}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",
@@ -57,11 +57,11 @@ async function submitToRestDB(url, formData) {
 const normalForm = document.getElementById("normal-signup-form");
 if (normalForm) {
     normalForm.addEventListener("submit", async (event) => {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); 
         const success = await submitToRestDB(NORMAL_SIGNUP_URL, new FormData(normalForm));
         if (success) {
-            normalForm.reset(); // Reset the form on success
-            window.location.href = "Login.html"; // Redirect to login page
+            normalForm.reset(); 
+            window.location.href = "Login.html"; 
         }
     });
 }
@@ -69,7 +69,7 @@ if (normalForm) {
 const businessForm = document.getElementById("business-signup-form");
 if (businessForm) {
     businessForm.addEventListener("submit", async (event) => {
-        event.preventDefault(); // Prevent default form submission
+        event.preventDefault(); 
 
         const formData = new FormData(businessForm);
         console.log("Submitting business sign-up form:", Object.fromEntries(formData.entries()));
@@ -114,14 +114,14 @@ async function validateLogin(usernameOrEmail, password) {
 
         const allUsers = [
             ...normalUsers.map((user) => ({
-                email: user.email || "", 
-                password: user.password || "", 
-                type: "normal",
+                email: user["E-mail"], 
+                password: user.Password, 
+                type: "normal", 
             })),
             ...businessUsers.map((user) => ({
-                email: user["E-Mail"] || "", 
-                password: user["Password"] || "", 
-                type: "business",
+                email: user["E-mail"], 
+                password: user.Password, 
+                type: "business", 
             })),
         ];
 
@@ -158,9 +158,7 @@ if (loginForm) {
 
         if (user) {
             console.log("Login successful:", user);
-
             sessionStorage.setItem("loggedInUser", JSON.stringify(user));
-
             window.location.href = "MainPage.html";
         } else {
             alert("Invalid username/email or password. Please try again.");
@@ -258,8 +256,8 @@ const countryOptions = document.querySelectorAll('#country-dropdown-options .opt
 countryOptions.forEach(function(option) {
     option.addEventListener('click', function() {
         const selectedCountry = option.textContent;
-        document.getElementById('country-input').value = selectedCountry; // Set selected value in input
-        document.getElementById('country-dropdown-options').style.display = 'none'; // Hide dropdown
+        document.getElementById('country-input').value = selectedCountry; 
+        document.getElementById('country-dropdown-options').style.display = 'none'; 
     });
 });
 
@@ -274,8 +272,8 @@ const options = document.querySelectorAll('.dropdown-options .option');
 options.forEach(function(option) {
     option.addEventListener('click', function() {
         const selectedGender = option.textContent;
-        document.getElementById('gender-input').value = selectedGender; // Set selected value in input
-        document.getElementById('gender-dropdown-options').style.display = 'none'; // Hide dropdown
+        document.getElementById('gender-input').value = selectedGender; 
+        document.getElementById('gender-dropdown-options').style.display = 'none'; 
     });
 });
 
