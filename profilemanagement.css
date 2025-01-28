@@ -239,3 +239,8 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
 .dropdown-options div:hover {
     background: #f1f1f1;
 }
+
+.change-picture {
+    background-color: #5c3dad;
+    color: white;
+}
