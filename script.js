@@ -201,7 +201,6 @@ document.addEventListener('DOMContentLoaded', () => {
 /* Random profile for main page */
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Function to generate a DiceBear avatar URL with a unique seed
     function generateDiceBearAvatar(seed) {
         return `https://api.dicebear.com/6.x/adventurer/svg?seed=${seed}`;
     }
@@ -264,7 +263,6 @@ countryOptions.forEach(function(option) {
 // Gender dropdown
 document.getElementById('gender-dropdown-btn').addEventListener('click', function() {
     const dropdownOptions = document.getElementById('gender-dropdown-options');
-    // Toggle visibility of the dropdown options
     dropdownOptions.style.display = dropdownOptions.style.display === 'block' ? 'none' : 'block';
 });
 
@@ -284,4 +282,15 @@ window.addEventListener('click', function(event) {
     if (!dropdownButton.contains(event.target) && !dropdownOptions.contains(event.target)) {
         dropdownOptions.style.display = 'none';
     }
+});
+
+// Words count
+document.addEventListener("DOMContentLoaded", () => {
+    const bioTextarea = document.getElementById("bioTextarea");
+    const wordCountDisplay = document.getElementById("wordCount");
+    bioTextarea.addEventListener("input", () => {
+        const text = bioTextarea.value.trim();
+        const wordCount = text === "" ? 0 : text.split(/\s+/).length;
+        wordCountDisplay.textContent = `${wordCount}/200`;
+    });
 });

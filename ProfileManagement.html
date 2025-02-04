@@ -12,17 +12,22 @@
 <!-- Header Section -->
 <header class="home-header">
     <div class="home-header-left">
-        <img src="/Images/LoopMartLogo.png" alt="Logo" class="logo">
+        <a href="MainPage.html" target="_blank">
+            <img src="/Images/LoopMartLogo.png" alt="Logo" class="logo">
+        </a>
         <div class="search-bar">
             <input type="text" placeholder="Search for item..." class="search-input">
             <button class="search-icon"><i class="fas fa-search"></i></button>
         </div>
     </div>
+
     <div class="home-header-right">
         <button class="icon"><i class="fas fa-shopping-cart"></i></button>
         <button class="icon"><i class="fas fa-bell"></i></button>
         <button class="icon"><i class="fas fa-comment"></i></button>
-        <button class="profile-icon-button" onclick="location.href='ProfileManagement.html';">Profile</button>
+        <button class="profile-icon" onclick="window.location.href='ProfileManagement.html';">
+            <img id="profileImg" class="profile-picture" src="/Images/default-profile.png" alt="Profile">
+        </button>
     </div>
 </header>
 
@@ -42,15 +47,14 @@
         <!-- Profile Picture Section -->
         <h1>Profile Picture</h1>
         <div class="profile-img-section">
-            <div class="profile-img">
-                <span>Profile</span>
-            </div>
-            <div class="profile-text">
-                <p>Profile photos are essential for buyers and sellers to recognize and build trust with each other.</p>
-                <button class="change-picture">Change Picture</button>
-                <input type="file" name="ProfilePicture" accept="image/*">
-            </div>
+        <div class="profile-img">
+            <img id="profileImg" class="profile-picture" alt="Profile">
         </div>
+        <div class="profile-text">
+            <p>Profile photos are essential for buyers and sellers to recognize and build trust with each other.</p>
+            <input type="file" name="ProfilePicture" accept="image/*">
+        </div>
+    </div>
     
         <!-- Profile Details Section -->
         <h2>Profile Details</h2>
@@ -66,9 +70,10 @@
     
         <h2>Bio</h2>
         <div class="input-fields">
-            <textarea name="Bio" placeholder="Write your bio..."></textarea>
-            <span class="word-count">0/200</span>
+            <textarea name="Bio" id="bioTextarea" placeholder="Write your bio..." maxlength="200"></textarea>
+            <span class="word-count" id="wordCount">0/200</span>
         </div>
+
     
         <h2>Business Registration Number (Optional)</h2>
         <div class="input-fields">
@@ -130,7 +135,6 @@
         </div>        
         <div class="input-fields">
             <input type="date" name="DOB" placeholder="Date of Birth">
-            <button class="calendar-icon">📅</button>
         </div>
     
         <button class="save-changes">Save Changes</button>
