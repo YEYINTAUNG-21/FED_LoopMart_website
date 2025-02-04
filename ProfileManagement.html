@@ -27,116 +27,116 @@
 </header>
 
 <!-- Profile Management Page -->
-<div class="profile-management">
-    <div class="sidebar">
-        <h2>Edit Profile</h2>
-        <ul>
-            <li><a href="#">Edit Profile</a></li>
-            <li><a href="#">Change Password</a></li>
-            <li><a href="#">Data & Privacy</a></li>
-            <li><a href="#">Theme</a></li>
-        </ul>
+<div class="content">
+    <div class="profile-management">
+        <div class="sidebar">
+            <h2>Edit Profile</h2>
+            <ul>
+                <li><a href="#">Edit Profile</a></li>
+                <li><a href="ChangePassword.html">Change Password</a></li>
+                <li><a href="#">Data & Privacy</a></li>
+                <li><a href="#">Theme</a></li>
+            </ul>
+        </div>
+
+        <div class="profile-details">
+            <!-- Profile Picture Section -->
+            <h1>Profile Picture</h1>
+            <div class="profile-img-section">
+                <div class="profile-img">
+                    <span>Profile</span>
+                </div>
+                <div class="profile-text">
+                    <p>Profile photos are essential for buyers and sellers to recognize and build trust with each other.</p>
+                    <button class="change-picture">Change Picture</button>
+                    <input type="file" name="ProfilePicture" accept="image/*">
+                </div>
+            </div>
+    
+            <!-- Profile Details Section -->
+            <h2>Profile Details</h2>
+            <div class="input-fields">
+                <input type="text" name="UserName" placeholder="User Name">
+            </div>
+            <div class="input-fields">
+                <input type="text" name="FirstName" placeholder="First Name">
+            </div>
+            <div class="input-fields">
+                <input type="text" name="LastName" placeholder="Last Name">
+            </div>
+    
+            <h2>Bio</h2>
+            <div class="input-fields">
+                <textarea name="Bio" placeholder="Write your bio..."></textarea>
+                <span class="word-count">0/200</span>
+            </div>
+    
+            <h2>Business Registration Number (Optional)</h2>
+            <div class="input-fields">
+                <input type="text" name="BusinessRegistrationNumber" placeholder="Business Registration Number">
+            </div>
+    
+            <h2>Operating Hour</h2>
+            <div class="input-fields">
+                <input type="text" name="StartTime" placeholder="Start Time">
+                <input type="text" name="EndTime" placeholder="End Time">
+            </div>
+    
+            <h2>Location</h2>
+            <div class="input-fields">
+                <input type="text" name="Location" placeholder="Country" id="country-input" readonly>
+                <button class="dropdown" id="country-dropdown-btn">▼</button>
+                <div class="dropdown-options" id="country-dropdown-options">
+                    <div class="option">Australia</div>
+                    <div class="option">Canada</div>
+                    <div class="option">France</div>
+                    <div class="option">Germany</div>
+                    <div class="option">India</div>
+                    <div class="option">Japan</div>
+                    <div class="option">Myanmar</div>
+                    <div class="option">Singapore</div>
+                    <div class="option">Thailand</div>
+                    <div class="option">United Kingdom</div>
+                    <div class="option">United States</div>
+                </div>
+            </div>
+
+            <h2>Business Address</h2>
+            <div class="input-fields">
+                <input type="text" name="PostalCode" placeholder="Postal Code">
+            </div>
+    
+            <h2>Website URL</h2>
+            <div class="input-fields">
+                <input type="text" name="WebsiteURL" placeholder="Your Website URL">
+            </div>
+    
+            <h2>Private Information</h2>
+            <p>We only share this information with others if you say it's okay.</p>
+            <div class="input-fields">
+                <input type="email" name="NewGmail" placeholder="Original G-Mail">
+            </div>
+            <div class="input-fields">
+                <input type="tel" name="newTel" placeholder="Original Mobile Number">
+            </div>
+            <div class="input-fields">
+                <input type="text" name="Gender" placeholder="Gender" id="gender-input" readonly>
+                <button class="dropdown" id="gender-dropdown-btn">▼</button>
+                <div class="dropdown-options" id="gender-dropdown-options">
+                    <div class="option">Male</div>
+                    <div class="option">Female</div>
+                    <div class="option">Prefer not to say</div>
+                </div>
+            </div>        
+            <div class="input-fields">
+                <input type="date" name="DOB" placeholder="Date of Birth">
+                <button class="calendar-icon">📅</button>
+            </div>
+    
+            <button class="save-changes">Save Changes</button>
+        </div>    
     </div>
-
-    <div class="profile-details">
-        <!-- Profile Picture Section -->
-        <h1>Profile Picture</h1>
-        <div class="profile-img-section">
-            <div class="profile-img">
-                <span>Profile</span>
-            </div>
-            <div class="profile-text">
-                <p>Profile photos are essential for buyers and sellers to recognize and build trust with each other.</p>
-                <button class="change-picture">Change Picture</button>
-                <input type="file" name="ProfilePicture" accept="image/*">
-            </div>
-        </div>
-    
-        <!-- Profile Details Section -->
-        <h2>Profile Details</h2>
-        <div class="input-fields">
-            <input type="text" name="UserName" placeholder="User Name">
-        </div>
-        <div class="input-fields">
-            <input type="text" name="FirstName" placeholder="First Name">
-        </div>
-        <div class="input-fields">
-            <input type="text" name="LastName" placeholder="Last Name">
-        </div>
-    
-        <h2>Bio</h2>
-        <div class="input-fields">
-            <textarea name="Bio" placeholder="Write your bio..."></textarea>
-            <span class="word-count">0/200</span>
-        </div>
-    
-        <h2>Business Registration Number (Optional)</h2>
-        <div class="input-fields">
-            <input type="text" name="BusinessRegistrationNumber" placeholder="Business Registration Number">
-        </div>
-    
-        <h2>Operating Hour</h2>
-        <div class="input-fields">
-            <input type="text" name="StartTime" placeholder="Start Time">
-            <input type="text" name="EndTime" placeholder="End Time">
-        </div>
-    
-        <h2>Location</h2>
-        <div class="input-fields">
-            <input type="text" name= "Location" placeholder="Country" id="country-input" readonly>
-            <button class="dropdown" id="country-dropdown-btn">▼</button>
-            <div class="dropdown-options" id="country-dropdown-options">
-                <div class="option">Australia</div>
-                <div class="option">Canada</div>
-                <div class="option">France</div>
-                <div class="option">Germany</div>
-                <div class="option">India</div>
-                <div class="option">Japan</div>
-                <div class="option">Myanmar</div>
-                <div class="option">Singapore</div>
-                <div class="option">Thailand</div>
-                <div class="option">United Kingdom</div>
-                <div class="option">United States</div>
-            </div>
-        </div>
-
-    
-        <h2>Business Address</h2>
-        <div class="input-fields">
-            <input type="text" name="PostalCode" placeholder="Postal Code">
-        </div>
-    
-        <h2>Website URL</h2>
-        <div class="input-fields">
-            <input type="text" name="WebsiteURL" placeholder="Your Website URL">
-        </div>
-    
-        <h2>Private Information</h2>
-        <p>We only share this information with others if you say it's okay.</p>
-        <div class="input-fields">
-            <input type="email" name="NewGmail" placeholder="Original G-Mail">
-        </div>
-        <div class="input-fields">
-            <input type="tel" name="newTel" placeholder="Original Mobile Number">
-        </div>
-        <div class="input-fields">
-            <input type="text" name="Gender" placeholder="Gender" id="gender-input" readonly>
-            <button class="dropdown" id="gender-dropdown-btn">▼</button>
-            <div class="dropdown-options" id="gender-dropdown-options">
-                <div class="option">Male</div>
-                <div class="option">Female</div>
-                <div class="option">Prefer not to say</div>
-            </div>
-        </div>        
-        <div class="input-fields">
-            <input type="date" name="DOB" placeholder="Date of Birth">
-            <button class="calendar-icon">📅</button>
-        </div>
-    
-        <button class="save-changes">Save Changes</button>
-    </div>    
 </div>
-
 <script src="script.js"></script>
 </body>
 </html>

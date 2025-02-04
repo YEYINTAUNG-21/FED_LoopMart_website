@@ -1,0 +1,167 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure html and body take full height */
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Header Styles */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+}
+
+.home-header-left, .home-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.search-input, .search-icon {
+    height: 35px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.search-input {
+    border-radius: 5px 0 0 5px;
+    padding: 5px 10px;
+    width: 200px;
+}
+
+.search-icon {
+    background: #5c3dad;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.icon, .profile-icon-button {
+    background: none;
+    border: none;
+    margin-left: 15px;
+    cursor: pointer;
+    color: #5c3dad;
+}
+
+/* Layout: Sidebar + Change Password Content */
+.change-password-container {
+    display: flex;
+    width: 100vw;
+    min-height: calc(100vh - 80px); /* Subtract the header height */
+    background-color: #d3d3d3; /* Light grey background */
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: white;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+    height: 100%; /* Sidebar should take full height */
+}
+
+.sidebar h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 10px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: block;
+    padding: 8px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.sidebar a:hover {
+    background: #f4f4f4;
+}
+
+/* Change Password Content (Takes Remaining Space) */
+.change-password-content {
+    flex-grow: 1;
+    padding: 40px;
+    background: white;
+    height: 100%;
+}
+
+/* Form Styling */
+.change-password-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.password-container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.password-container label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.password-container input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.save-changes {
+    background: #5c3dad;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-changes:hover {
+    background: #4a2d96; /* Darker shade on hover */
+}
