@@ -2,7 +2,7 @@
 const API_KEY = "677f3656c7a8646786c7832f"; 
 const NORMAL_SIGNUP_URL = "https://account-25ce.restdb.io/rest/normal-sign-up-page";
 const BUSINESS_SIGNUP_URL = "https://account-25ce.restdb.io/rest/business-sign-up-page";
-
+const Profile_Management_URL = "https://account-25ce.restdb.io/rest/profile-management-page";
 
 async function checkIfUserExists(url, email) {
     try {
