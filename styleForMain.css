@@ -1,4 +1,4 @@
-/* General Body Styles */
+/* Main Page */
 body {
     margin: 0;
     font-family: Inter, Arial, sans-serif;
@@ -16,28 +16,49 @@ body {
 /* Header Section */
 .home-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    background-color: white;
+    justify-content: space-between;
+    padding: 10px 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     width: 100%;
     box-sizing: border-box;
 }
 
+.home-header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1400px;
+}
+
+
 .home-header-left {
     display: flex;
     align-items: center;
+    flex: 1;
     gap: 15px;
+}
+
+.search-bar-container {
+    flex-grow: 1;
+    max-width: 400px; 
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    gap: 10px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    width: 100%;
+}
+
+.home-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+    gap: 12px;
 }
 
 .search-input {
@@ -61,7 +82,7 @@ body {
 .home-header-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .icon{
@@ -94,6 +115,7 @@ body {
     height: 35px;
     border-radius: 50%;
     object-fit: cover;
+    background-color: #5c3dad;
     border: 2px solid #5c3dad; 
 }
 
@@ -288,4 +310,49 @@ body {
     color: #5c3dad;
     margin-bottom: 30px;
     margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .home-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home-header-right {
+        flex: 1;
+        justify-content: flex-end;
+        gap: 5px;
+    }
+
+    .search-bar-container {
+        flex-grow: 1;
+        max-width: 300px; 
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .search-input {
+        width: 140px;
+    }
+
+    .profile-header-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-picture {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
 }
