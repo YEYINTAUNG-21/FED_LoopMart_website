@@ -28,16 +28,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-<<<<<<< HEAD
-    padding: 20px;
-    background: white;
-    color: #fff;
-    position: fixed; /* Fixed at the top */
-    width: 100%;
-    top: 0; /* Make sure it's at the top */
-    left: 0; /* Align with the left side */
-    z-index: 10; /* Keep it on top of other content */
-=======
     padding: 15px 20px;
     background-color: white;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -46,7 +36,6 @@ body {
     z-index: 1000;
     width: 100%;
     box-sizing: border-box;
->>>>>>> df78230f881511bac9440bf699769d71e8618dff
 }
 
 .home-header-left {
@@ -98,13 +87,6 @@ body {
     font-size: 16px;
 }
 
-<<<<<<< HEAD
-/* Layout: Profile Management Page */
-.content {
-    width: 100%;
-    margin-top: 80px; 
-    padding-top: 20px; 
-=======
 .profile-icon {
     width: 40px;
     height: 40px;
@@ -131,7 +113,6 @@ body {
 .profile-management {
     display: flex;
     padding: 20px;
->>>>>>> df78230f881511bac9440bf699769d71e8618dff
 }
 
 /* Profile Management Layout */
@@ -213,12 +194,8 @@ body {
 .profile-details .profile-text {
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
-    justify-content: center;
-=======
     justify-content: center; 
     margin-left: 20px;
->>>>>>> df78230f881511bac9440bf699769d71e8618dff
 }
 
 .profile-details .profile-text p {
@@ -266,11 +243,7 @@ textarea {
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
-<<<<<<< HEAD
-    padding-right: 40px;
-=======
     padding-right: 40px; 
->>>>>>> df78230f881511bac9440bf699769d71e8618dff
 }
 
 /* Word Count */
