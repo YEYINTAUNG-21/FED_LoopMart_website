@@ -1,0 +1,446 @@
+/* Profile Page Listings and Followers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* General Container Styling */
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+/* Header Styles */
+.logo {
+    max-height: 50px;
+    display: block;
+    margin-right: 20px;
+}
+
+/* Navigation Header */
+.home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/* Header Left Section */
+.home-header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.search-icon {
+    padding: 10px;
+    background-color: #5c3dad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Header Right Section */
+.home-header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Icon Buttons */
+.icon {
+    width: 40px;
+    height: 40px;
+    background-color: #5c3dad;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Profile Image */
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #5c3dad;
+    border: 2px solid #5c3dad; 
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 2px solid #5c3dad;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Info */
+.profile-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Profile Image */
+.profile-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5c3dad;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+    background-color: #7e3ff2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.edit-profile-btn:hover {
+    background-color: #5c3dad;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid #ccc;  
+    padding: 0 20px;
+}
+
+.nav-tabs .tab {
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-weight: bold;
+    color: #6a0dad;
+    transition: border-bottom 0.3s;
+}
+
+.nav-tabs .tab.active {
+    border-bottom: 3px solid #6a0dad;
+    color: #6a0dad;
+}
+
+/* Listings Section */
+.listings-section {
+    padding: 20px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Listings Header */
+.listings-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.listings-header input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    flex: 1;
+    outline: none;
+}
+
+.listings-header button {
+    background: #7a3df4;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.3s ease;
+}
+
+.listings-header button:hover {
+    background: #5e2abf;
+}
+
+/* Listings Grid */
+.listings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/*Individual Listing */
+.listing-item {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px; 
+    margin: auto; 
+}
+
+.listing-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Listing Image */
+.listing-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #f0f0f0;
+    margin-bottom: 15px;
+}
+
+/* Listing Details */
+.listing-details p {
+    margin: 10px 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.item-name {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Followers Section */
+.followers-section {
+    padding: 20px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*Followers Header */
+.followers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.followers-header h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/*Search Follower */
+.search-follower {
+    display: flex;
+    gap: 5px;
+}
+
+.search-follower input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    outline: none;
+}
+
+.search-follower button {
+    background-color: #6a0dad;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+/*Followers Container */
+.followers-container {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 10px 0;
+    scrollbar-width: none;
+}
+
+.followers-container::-webkit-scrollbar {
+    display: none;
+}
+
+/*Individual Follower */
+.follower-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+    cursor: pointer;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.follower-profile:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(106, 13, 173, 0.3);
+}
+
+/*Follower Image */
+.follower-profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6a0dad;
+    transition: border-color 0.3s ease;
+}
+
+.follower-profile:hover img {
+    border-color: #8b00ff;
+}
+
+/* Follower Name */
+.follower-profile p {
+    margin-top: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.follower-profile:hover p {
+    color: #6a0dad;
+}
+
+@media (max-width: 768px) {
+    .home-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .home-header-left {
+        flex: 1;
+        justify-content: flex-start;
+    }
+
+    .home-header-right {
+        flex: 1;
+        justify-content: flex-end;
+        gap: 5px;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .search-input {
+        width: 140px;
+    }
+
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile-header-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-picture {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+    .account-info {
+        color: white;
+        font-size: 14px;
+    }
+
+    .listings-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+        padding-bottom: 20px;
+    }
+}

@@ -8,29 +8,30 @@
     <link rel="stylesheet" href="styleForMain.css">
 </head>
 <body>
-    <div class="home-page">
-        <!-- Header Section -->
-        <header class="home-header">
-            <!-- Logo and Search Bar -->
-            <div class="home-header-left">
+    <div class="home-header">
+        <div class="home-header-left">
+            <a href="MainPage.html">
                 <img src="/Images/LoopMartLogo.png" alt="Logo" class="logo">
+            </a>
+            <div class="search-bar-container">
                 <div class="search-bar">
                     <input type="text" placeholder="Search for item..." class="search-input">
                     <button class="search-icon"><i class="fas fa-search"></i></button>
                 </div>
             </div>
+        </div>
+    
+        <div class="home-header-right">
+            <button class="icon"><i class="fas fa-shopping-cart"></i></button>
+            <button class="icon"><i class="fas fa-bell"></i></button>
+            <button class="icon"><i class="fas fa-comment"></i></button>
+            <button class="profile-icon" onclick="window.location.href='ProfilePageListings.html';">
+                <img id="profileImg" class="profile-picture" src="" alt="Profile">
+            </button>
+        </div>
+    </div>
         
-            <!-- Icons Section -->
-            <div class="home-header-right">
-                <button class="icon"><i class="fas fa-shopping-cart"></i></button>
-                <button class="icon"><i class="fas fa-bell"></i></button>
-                <button class="icon"><i class="fas fa-comment"></i></button>
-                <button class="profile-icon" onclick="window.location.href='ProfileManagement.html';">
-                    <img id="profileImg" class="profile-picture" alt="Profile">
-                </button>
-            </div>
-        </header>
-        
+
         <!-- Trending Listings Section -->
         <section class="trending-listings">
             <h2>Trending Listings</h2>
@@ -48,7 +49,11 @@
                             <p class="time-ago">14 hours ago</p>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <img class="listing-img" src="/Images/apple-iphone-13-pro-max-1.jpg" alt="Listing Image">
+=======
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
                     <div class="listing-details">
                         <p class="item-name">Apple iPhone 13 Pro Max</p>
                         <p class="short-desc">Description: Some light scratches on the screen but 100% functional.</p>
@@ -56,7 +61,11 @@
                         <p class="item-condition">Lightly used</p>
                         <div class="like-section">
                             <span class="fas fa-heart"></span>
+<<<<<<< HEAD
                             <p class="like-number">227 likes</p>
+=======
+                            <p class="like-number">0 likes</p>
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
                         </div>
                     </div>
                 </div>
@@ -68,7 +77,11 @@
                             <p class="time-ago">10 hours ago</p>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <img class="listing-img" src="/Images/nike-dunk-low-polar-blue.webp" alt="Listing Image">
+=======
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
                     <div class="listing-details">
                         <p class="item-name">Nike Dunk Low Polar Blue</p>
                         <p class="short-desc">Description: Nike shoe from JD Sports, size US 9.0</p>
@@ -88,7 +101,11 @@
                             <p class="time-ago">10 hours ago</p>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <img class="listing-img" src="/Images/iona-tabletop-bbq-grill.jpg" alt="Listing Image">
+=======
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
                     <div class="listing-details">
                         <p class="item-name">BN Iona Tabletop BBQ Grill</p>
                         <p class="short-desc">Description: Iona Tabletop BBQ Grill with Hotpot Model GL3613</p>
@@ -108,7 +125,11 @@
                             <p class="time-ago">10 hours ago</p>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <img class="listing-img" src="/Images/honda_nc750x_abs.jpg" alt="Listing Image">
+=======
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
                     <div class="listing-details">
                         <p class="item-name">Apr/2034 Honda NC 750 X ABS</p>
                         <p class="short-desc">Description: Honda NC 750 X ABS, COE expires 2030</p>
@@ -128,7 +149,11 @@
                             <p class="time-ago">10 hours ago</p>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <img class="listing-img" src="/Images/adidas-originals-SL72-trainers.jpg" alt="Listing Image">
+=======
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
                     <div class="listing-details">
                         <p class="item-name">Adidas Originals SL72 Trainers</p>
                         <p class="short-desc">Description: No shoebox included. Bought from Bangkok.</p>
@@ -145,29 +170,29 @@
 
         <!-- Filter Section -->
         <section class="filter-section">
-            <button class="filter-button active">All</button>
-            <button class="filter-button">Home & Furniture</button>
-            <button class="filter-button">Vehicles</button>
-            <button class="filter-button">Books, Music</button>
-            <button class="filter-button">Electronic</button>
+            <button class="filter-button active" data-category="All">All</button>
+            <button class="filter-button" data-category="Home & Furniture">Home & Furniture</button>
+            <button class="filter-button" data-category="Vehicles">Vehicles</button>
+            <button class="filter-button" data-category="Books & Music">Books & Music</button>
+            <button class="filter-button" data-category="Electronics">Electronics</button>
         </section>
-
         <!-- Popular Categories Section -->
         <section class="popular-categories">
             <div class="listing-nav">
                 <button class="arrow-btn left-arrow"><i class="fas fa-chevron-left"></i></button>
                 <button class="arrow-btn right-arrow"><i class="fas fa-chevron-right"></i></button>
             </div>
-            <div class="listing-container">
-                <!-- Listing Card -->
+            <div class="listing-container" id="popular-categories-container">
+                <!-- First Item (Manually Added) -->
                 <div class="listing-item">
                     <div class="listing-header">
-                        <img class="profile-img" src="" alt="Profile">
+                        <img class="profile-img" src="https://api.dicebear.com/6.x/adventurer/svg?seed=FeaturedUser" alt="Profile">
                         <div class="profile-info">
-                            <p class="profile-name">Profile Name</p>
-                            <p class="time-ago">14 hours ago</p>
+                            <p class="profile-name">John Doe</p>
+                            <p class="time-ago">Just Now</p>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <img class="listing-img" src="/Images/vintage-seiko-5.webp" alt="Listing Image">
                     <div class="listing-details">
                         <p class="item-name">Vintage Seiko 5</p>
@@ -177,9 +202,21 @@
                         <div class="like-section">
                             <span class="fas fa-heart"></span>
                             <p class="like-number">108 likes</p>
+=======
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name"><strong>Labubu</strong></p>
+                        <p class="short-desc">Colour-Brown</p>
+                        <p class="price"><strong>Price:</strong> $70.00</p>
+                        <p class="item-condition"><strong>Condition:</strong> Brand New</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">3 likes</p>
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
                         </div>
                     </div>
                 </div>
+                <!-- Other Items from RestDB will be added here -->
             </div>
         </section>
 
@@ -199,7 +236,111 @@
                             <p class="time-ago">14 hours ago</p>
                         </div>
                     </div>
+<<<<<<< HEAD
                     <img class="listing-img" src="/Images/BH-MacBook-Air-M1.jpg" alt="Listing Image">
+=======
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Item Name</p>
+                        <p class="short-desc">Short Description of Item</p>
+                        <p class="price">Price</p>
+                        <p class="item-condition">Item Condition</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">120 likes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <img class="profile-img" src="" alt="Profile">
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">14 hours ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Item Name</p>
+                        <p class="short-desc">Short Description of Item</p>
+                        <p class="price">Price</p>
+                        <p class="item-condition">Item Condition</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">120 likes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <img class="profile-img" src="" alt="Profile">
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">14 hours ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Item Name</p>
+                        <p class="short-desc">Short Description of Item</p>
+                        <p class="price">Price</p>
+                        <p class="item-condition">Item Condition</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">120 likes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <img class="profile-img" src="" alt="Profile">
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">14 hours ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Item Name</p>
+                        <p class="short-desc">Short Description of Item</p>
+                        <p class="price">Price</p>
+                        <p class="item-condition">Item Condition</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">120 likes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <img class="profile-img" src="" alt="Profile">
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">14 hours ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+                    <div class="listing-details">
+                        <p class="item-name">Item Name</p>
+                        <p class="short-desc">Short Description of Item</p>
+                        <p class="price">Price</p>
+                        <p class="item-condition">Item Condition</p>
+                        <div class="like-section">
+                            <span class="fas fa-heart"></span>
+                            <p class="like-number">120 likes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="listing-item">
+                    <div class="listing-header">
+                        <img class="profile-img" src="" alt="Profile">
+                        <div class="profile-info">
+                            <p class="profile-name">Profile Name</p>
+                            <p class="time-ago">14 hours ago</p>
+                        </div>
+                    </div>
+                    <img class="listing-img" src="/Images/Labubu.jpg" alt="Listing Image">
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
                     <div class="listing-details">
                         <p class="item-name">BH MacBook Air M1</p>
                         <p class="short-desc">Description: Brand new. 9.9/10 condition. Used less than 3 times. 

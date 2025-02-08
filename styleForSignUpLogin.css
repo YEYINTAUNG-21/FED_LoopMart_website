@@ -46,7 +46,7 @@ html, body {
 /* Form Header */
 h1 {
   font-size: 28px;
-  color: #5c3dad; 
+  color: #5c3dad;
   margin-bottom: 10px;
 }
 
@@ -132,7 +132,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Form Options (Remember Me and Forgot Password) */
+/* Form Options */
 .form-options {
   display: flex;
   justify-content: space-between; 
@@ -165,3 +165,21 @@ a:hover {
 .forgot-password:hover {
   text-decoration: underline;
 } 
+
+/* Responsive Design for Sign-Up & Login Pages */
+@media (max-width: 768px) {
+  .signup-container, .login-container {
+      max-width: 450px;
+      padding: 30px;
+  }
+
+  form input, form select {
+      font-size: 16px;
+      padding: 12px;
+  }
+
+  button {
+      font-size: 16px;
+      padding: 12px;
+  }
+}

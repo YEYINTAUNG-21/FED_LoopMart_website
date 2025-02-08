@@ -1,4 +1,4 @@
-/* Basic Styles */
+/* Profile Management page */
 * {
     margin: 0;
     padding: 0;
@@ -18,11 +18,17 @@ body {
     border-radius: 8px;
 }
 
-/* Header Styles */
+.logo {
+    max-height: 50px;
+    display: block;
+    margin-right: 20px;
+}
+
 .home-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     padding: 20px;
     background: white;
     color: #fff;
@@ -31,72 +37,101 @@ body {
     top: 0; /* Make sure it's at the top */
     left: 0; /* Align with the left side */
     z-index: 10; /* Keep it on top of other content */
+=======
+    padding: 15px 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
 }
 
-.home-header-left, .home-header-right {
+.home-header-left {
     display: flex;
     align-items: center;
-}
-
-.logo {
-    margin-right: 15px;
-    height: 50px;
+    gap: 15px;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-}
-
-.search-input, .search-icon {
-    height: 35px;
-    border: 1px solid #ccc;
-    font-size: 14px;
+    gap: 10px;
 }
 
 .search-input {
-    border-radius: 5px 0 0 5px;
-    padding: 5px 10px;
-    width: 200px;
-    margin-right: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+    box-sizing: border-box;
 }
 
 .search-icon {
-    background: #5c3dad;
-    color: #fff;
-    padding: 0 10px;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-}
-
-.icon, .profile-icon-button {
-    background: none;
+    padding: 10px;
+    background-color: #5c3dad;
+    color: white;
     border: none;
-    margin-left: 15px;
+    border-radius: 5px;
     cursor: pointer;
-    color: #5c3dad;
 }
 
-.profile-icon-button {
+.home-header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon{
     width: 40px;
     height: 40px;
+    background-color: #5c3dad;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
-    color: white;
-    background-color: #5c3dad;
-    border: none;
     border-radius: 50%;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 16px;
 }
 
+<<<<<<< HEAD
 /* Layout: Profile Management Page */
 .content {
     width: 100%;
     margin-top: 80px; 
     padding-top: 20px; 
+=======
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #5c3dad;
+    border: 2px solid #5c3dad; 
+}
+
+
+/* Profile Management Page Styles */
+.profile-management {
+    display: flex;
+    padding: 20px;
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
 }
 
 /* Profile Management Layout */
@@ -163,22 +198,27 @@ body {
 }
 
 .profile-details .profile-img {
-    background-color: #5c3dad; 
-    width: 80px;
+    width: 80px; 
     height: 80px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
-    color: #fff;
-    margin-right: 20px;
+    overflow: hidden; 
+    background-color: #5c3dad;
+    border: 2px solid #5c3dad;
+    flex-shrink: 0; 
 }
 
 .profile-details .profile-text {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     justify-content: center;
+=======
+    justify-content: center; 
+    margin-left: 20px;
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
 }
 
 .profile-details .profile-text p {
@@ -226,7 +266,11 @@ textarea {
 }
 
 input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+<<<<<<< HEAD
     padding-right: 40px;
+=======
+    padding-right: 40px; 
+>>>>>>> df78230f881511bac9440bf699769d71e8618dff
 }
 
 /* Word Count */
@@ -279,4 +323,45 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
 .change-picture {
     background-color: #5c3dad;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .profile-management {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        padding-bottom: 10px;
+    }
+
+    .profile-details {
+        width: 100%;
+    }
+
+    .search-bar {
+        max-width: 220px;
+    }
+
+    .search-input {
+        width: 140px;
+    }
+
+    /*  Adjust Icons */
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .profile-img {
+        width: 80px; 
+        height: 80px;
+    }
+
+    .profile-picture {
+        width: 100%;
+        height: 100%;
+    }
+
 }

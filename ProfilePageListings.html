@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Listings</title>
+    <link rel="stylesheet" href="styleForProfilePageListingsFollowers.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="home-header">
+    <div class="home-header-left">
+        <a href="MainPage.html">
+            <img src="/Images/LoopMartLogo.png" alt="Logo" class="logo">
+        </a>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for item..." class="search-input">
+            <button class="search-icon"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <div class="home-header-right">
+        <button class="icon"><i class="fas fa-shopping-cart"></i></button>
+        <button class="icon"><i class="fas fa-bell"></i></button>
+        <button class="icon"><i class="fas fa-comment"></i></button>
+        <button class="profile-icon" onclick="window.location.href='ProfilePageListings.html';">
+            <img id="profileImg" class="profile-picture" src="" alt="Profile">
+        </button>
+    </div>
+</header>
+
+
+<section class="profile-section">
+    <div class="profile-info">
+        <div class="profile-img">
+            <img id="profileImg" class="profile-picture" alt="Profile">
+        </div>
+        <div>
+            <h2 id="accountName">Account Name</h2>
+            <p>Account Details <i class="fas fa-chevron-right"></i></p>
+        </div>
+    </div>
+    <button class="edit-profile-btn" onclick="location.href='ProfileManagement.html'">Edit Profile</button>
+</section>
+
+<nav class="nav-tabs">
+    <button class="tab active">Listings</button>
+    <button class="tab" onclick="window.location.href='ProfilePageFollowers.html'">
+        <i class="fas fa-plus"></i> Followers
+    </button>
+    <button class="tab">Following</button>
+    <button class="tab">Reviews</button>
+</nav>
+
+<section class="listings-section" id="listings">
+    <div class="listings-header">
+        <input type="text" id="listing-search" placeholder="Search Listings">
+        <button><i class="fas fa-search"></i></button>
+        <button><i class="fas fa-filter"></i> Filter</button>
+        <button onclick="window.location.href='AddListings.html'">
+            <i class="fas fa-plus"></i> Add
+        </button>
+    </div>
+
+    <div class="listings-container" id="listings-container">
+        <!-- Listings will be added here -->
+    </div>
+</section>
+
+<script src="script.js" defer></script>
+</body>
+</html>

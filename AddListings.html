@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Listings</title>
+  <link rel="stylesheet" href="styleForAddListings.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="home-header">
+  <div class="home-header-left">
+    <a href="MainPage.html">
+      <img src="/Images/LoopMartLogo.png" alt="Logo" class="logo">
+    </a>
+    <div class="search-bar">
+      <input type="text" placeholder="Search for item..." class="search-input">
+      <button class="search-icon"><i class="fas fa-search"></i></button>
+    </div>
+  </div>
+  <div class="home-header-right">
+    <button class="icon"><i class="fas fa-shopping-cart"></i></button>
+    <button class="icon"><i class="fas fa-bell"></i></button>
+    <button class="icon"><i class="fas fa-comment"></i></button>
+    <button class="profile-icon" onclick="window.location.href='ProfileManagement.html';">
+      <img id="profileImg" class="profile-picture" src="" alt="Profile">
+    </button>
+  </div>
+</header>
+
+
+<section class="add-listing-section">
+  <h1>Add Listings</h1>
+  <h3>Listing Detail</h3>
+
+  <form id="add-listing-form">
+    <div class="image-upload-container">
+      <label for="imageUpload" class="image-box" id="imageBox">
+        <img id="previewImage" src="" alt="Image Preview" style="display: none;">
+        <span id="defaultText">Image</span>
+      </label>
+
+      <div class="upload-section">
+        <p>High-quality item images can capture customer attention more effectively.</p>
+        <input type="file" id="imageUpload" accept="image/*" class="visually-hidden">
+        <button type="button" id="uploadButton" class="upload-button" onclick="triggerFileUpload()">
+          <i class="fas fa-upload"></i> Upload Photo
+        </button>
+      </div>
+    </div>
+
+    <input type="text" id="itemName" placeholder="Item Name" required>
+    <input type="text" id="briefDescription" placeholder="Brief Description" required>
+    <select id="itemCondition">
+      <option value="" disabled selected>Item Condition</option>
+      <option value="Brand New">Brand New</option>
+      <option value="Like New">Like New</option>
+      <option value="Excellent Condition">Excellent Condition</option>
+      <option value="Good Condition">Good Condition</option>
+      <option value="Fair Condition">Fair Condition</option>
+      <option value="Well Used">Well Used</option>
+      <option value="For Repair">For Repair</option>
+    </select>
+    <select id="itemCategory">
+      <option value="" disabled selected>Category</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Fashion & Accessories">Fashion & Accessories</option>
+      <option value="Home & Living">Home & Living</option>
+      <option value="Health & Beauty">Health & Beauty</option>
+      <option value="Toys & Games">Toys & Games</option>
+      <option value="Automotive">Automotive</option>
+      <option value="Sports & Outdoors">Sports & Outdoors</option>
+      <option value="Books & Stationery">Books & Stationery</option>
+      <option value="Collectibles & Hobbies">Collectibles & Hobbies</option>
+      <option value="Furniture & Appliances">Furniture & Appliances</option>
+      <option value="Food & Beverages">Food & Beverages</option>
+      <option value="Services">Services</option>
+      <option value="Others">Others</option>
+    </select>
+    <input type="text" id="itemPrice" placeholder="$0.00" required>
+    <input type="text" id="deliveryDeal" placeholder="Delivery Deal" required>
+
+    <button class="addListingButton" type="submit">Add Listing</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
