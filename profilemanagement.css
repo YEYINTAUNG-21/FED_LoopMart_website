@@ -1,4 +1,4 @@
-/* Profile Management page */
+/* Profile Management Page */
 * {
     margin: 0;
     padding: 0;
@@ -115,26 +115,11 @@ body {
     padding: 20px;
 }
 
-/* Profile Management Layout */
-.profile-management {
-    display: flex; 
-    gap: 30px; 
-}
-
-/* Sidebar Styling */
 .sidebar {
-    width: 250px;
-    background-color: #f4f4f4;
+    width: 25%;
+    background: #fff;
     padding: 20px;
-    border-right: 2px solid #ddd;
-    position: sticky; 
-    top: 80px; 
-    height: calc(100vh - 80px); 
-}
-
-.sidebar h2 {
-    font-size: 20px;
-    margin-bottom: 15px;
+    border-right: 1px solid #ccc;
 }
 
 .sidebar ul {
@@ -156,11 +141,6 @@ body {
     transition: background 0.3s;
 }
 
-.sidebar a:hover {
-    background: #e0e0e0;
-}
-
-/* Profile Details Styling */
 .profile-details {
     width: 75%;
     padding: 20px;
@@ -174,7 +154,7 @@ body {
 
 .profile-details .profile-img-section {
     display: flex;
-    align-items: center;
+    align-items: center; /* Vertically center */
     margin-bottom: 20px;
 }
 
@@ -203,7 +183,7 @@ body {
 }
 
 .profile-details .profile-text button {
-    align-self: flex-start;
+    align-self: flex-start; /* Align the button to the left */
 }
 
 .input-fields {
@@ -235,7 +215,7 @@ textarea {
     position: absolute;
     right: 10px;
     top: 50%;
-    margin-top: -10px;
+    margin-top: -10px; 
     background: none;
     border: none;
     font-size: 1.2em;
@@ -321,7 +301,6 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
         width: 140px;
     }
 
-    /*  Adjust Icons */
     .icon {
         width: 30px;
         height: 30px;
